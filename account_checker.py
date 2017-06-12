@@ -21,7 +21,8 @@ def check_username(usernames):
 
     output.close()
     count = len(usernames)
-    print(colorama.Fore.YELLOW + 'Done. {}/{} unregistered, {}%'.format(count,count, unregistered / count))
+    print(colorama.Fore.YELLOW + 'Done. {}/{} unregistered, {}%'.format(count,count, (unregistered / count) * 100))
+    print(colorama.Style.RESET_ALL)
 
 
 def start():
